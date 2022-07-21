@@ -3,7 +3,7 @@ import { clientCredentials } from '../utils/client';
 // API CALLS FOR BOOKS
 
 const dbUrl = clientCredentials.databaseURL;
-
+console.warn(clientCredentials);
 const getBooks = (uid) => new Promise((resolve, reject) => {
   axios.get(`${dbUrl}/books.json?orderBy="uid"&equalTo="${uid}"`)
     .then((response) => {

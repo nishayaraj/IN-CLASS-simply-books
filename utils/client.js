@@ -12,6 +12,7 @@ const clientCredentials = {
   databaseURL: process.env.NEXT_PUBLIC_DATABASE_URL,
 };
 
+// if you have not initialized app, go and initialize
 if (!firebase.apps.length) {
   firebase?.initializeApp(clientCredentials);
 }
