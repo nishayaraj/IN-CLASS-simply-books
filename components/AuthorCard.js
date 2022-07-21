@@ -13,8 +13,11 @@ export default function AuthorCard({ authorObj, onUpdate }) {
   };
 
   return (
-    <>
-      <Card style={{ width: '18rem' }}>
+    <div>
+      <Card style={{
+        width: '18rem',
+      }}
+      >
         <Card.Body>
           <Card.Title>
             {authorObj.first_name} {authorObj.last_name}
@@ -40,7 +43,7 @@ export default function AuthorCard({ authorObj, onUpdate }) {
       <div>last_name: {authorObj.last_name}</div>
       <div>favorite: {authorObj.favorite}</div>
   <img src={authorObj.image} alt={authorObj.first_name} /> */}
-    </>
+    </div>
   );
 }
 
